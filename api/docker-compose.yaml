@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: fabric
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5436:5432"
